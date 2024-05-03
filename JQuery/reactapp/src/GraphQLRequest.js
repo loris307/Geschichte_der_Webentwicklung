@@ -48,7 +48,7 @@ const GraphQLRequest = () => {
             <>
                 <h1>{userData.name}</h1>
                 <p>Email: {userData.email}</p>
-                <p>Penis: {userData.penisLaenge}</p>
+                <p>Penislänge: {userData.penisLaenge}</p>
                 <h2>Friends:</h2>
                 <ul>
                     {userData.friends.map(friend => (
