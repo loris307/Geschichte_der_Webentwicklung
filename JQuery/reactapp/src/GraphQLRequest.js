@@ -7,7 +7,7 @@ const GraphQLRequest = () => {
     useEffect(() => {
         const query = `
             query {
-                user(id: "1") {
+                user(id: "3") {
                     name
                     email
                     penisLaenge

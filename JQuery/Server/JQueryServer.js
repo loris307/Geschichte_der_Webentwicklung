@@ -22,8 +22,10 @@ const resolvers = {
   Query: {
     user: async (parent, args, context, info) => {
       const users = [
-        { id: "1", name: "Alice", email: "alice@example.com", penisLaenge: "5000", friends: [{ id: "2", name: "Bob" }] },
-        { id: "2", name: "Bob", email: "bob@example.com", penisLaenge: "5000", friends: [{ id: "2", name: "Bob" }] }
+        { id: "1", name: "Alice", email: "alice@example.com", penisLaenge: "30cm", friends: [{ id: "2", name: "Bob" }] },
+        { id: "2", name: "Bob", email: "bob@example.com", penisLaenge: "5cm", friends: [{ id: "1", name: "Bob" }] },
+        { id: "3", name: "Charlie", email: "charlie@kacke", penisLaenge: "10cm", friends: [{ id: "1", name: "Alice" }, { id: "2", name: "Bob"} ]},
+        { id: "4", name: "David", email: "david@kacke", penisLaenge: "15cm", friends: [{ id: "1", name: "Alice" }]}
       ];
 
       return users.find(user => user.id === args.id);
