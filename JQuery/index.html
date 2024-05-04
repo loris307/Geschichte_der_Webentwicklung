@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Beispiel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Willkommen auf meiner Seite!</h1>
+    <button>Klicke mich, um Absätze zu verstecken</button>
+    <p>Das ist der erste Absatz. Er wird beim Klicken auf den Button versteckt.</p>
+    <p>Das ist der zweite Absatz. Auch er verschwindet, wenn du den Button klickst.</p>
+</body>
+</html>
