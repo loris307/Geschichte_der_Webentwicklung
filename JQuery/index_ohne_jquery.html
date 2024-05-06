@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Beispiel</title>
+</head>
+<body>
+    <h1>Willkommen auf meiner Seite!</h1>
+    <button id="hideButton">Klicke mich, um Absätze zu verstecken</button>
+    <p>Das ist der erste Absatz. Er wird beim Klicken auf den Button versteckt.</p>
+    <p>Das ist der zweite Absatz. Auch er verschwindet, wenn du den Button klickst.</p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('hideButton').addEventListener('click', function() {
+                var paragraphs = document.querySelectorAll('p');
+                paragraphs.forEach(function(p) {
+                    p.style.display = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
